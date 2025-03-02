@@ -17,23 +17,22 @@ function draw() {
 
 	push();
 	translate(leftX, leftY);
-	// Add rectangles to the top of the left eye
 	push();
-	translate(-6.5, -33); // Move 3 pixels upwards
+	translate(-6.5, -33);
 	rotate(-35);
 	fill(0);
 	noStroke();
-	rect(0, -10, 3, 10); // Left rectangle
+	rect(0, -10, 3, 10);
 	pop();
 	push();
-	translate(3.5, -33); // Move 3 pixels upwards
+	translate(3.5, -33);
 	rotate(-35);
 	fill(0);
 	noStroke();
-	rect(0, -10, 3, 10); // Right rectangle
+	rect(0, -10, 3, 10);
 	pop();
 	fill(255);
-	stroke(255); // Change border color to white
+	stroke(255);
 	ellipse(0, 0, 50, 50);
 	rotate(leftAngle);
 	fill(0);
@@ -48,24 +47,22 @@ function draw() {
 
 	push();
 	translate(rightX, rightY);
-	// Add rectangles to the top of the right eye
 	push();
-	translate(-0.5, -33); // Move 6 pixels to the right
-	rotate(35); // Lean right 35 degrees
+	translate(-0.5, -33);
+	rotate(35);
 	fill(0);
 	noStroke();
-	rect(0, -10, 3, 10); // Left rectangle
+	rect(0, -10, 3, 10);
 	pop();
 	push();
-	translate(9.5, -33); // Move 6 pixels to the right
-	rotate(35); // Lean right 35 degrees
+	translate(9.5, -33);
+	rotate(35);
 	fill(0);
 	noStroke();
-	rect(0, -10, 3, 10); // Right rectangle
+	rect(0, -10, 3, 10);
 	pop();
-	// Draw the ellipse
 	fill(255);
-	stroke(255); // Change border color to white
+	stroke(255);
 	ellipse(0, 0, 50, 50);
 	rotate(rightAngle);
 	fill(0);
