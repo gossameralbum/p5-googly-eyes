@@ -19,6 +19,10 @@ function draw() {
 	translate(leftX, leftY);
 	fill(255);
 	ellipse(0, 0, 50, 50);
+	// Add rectangles to the top of the left eye
+	fill(0);
+	rect(-6.5, -35, 3, 10); // Left rectangle
+	rect(3.5, -35, 3, 10); // Right rectangle
 	rotate(leftAngle);
 	fill(0);
 	ellipse(12.5, 0, 25, 25);
@@ -33,6 +37,10 @@ function draw() {
 	translate(rightX, rightY);
 	fill(255);
 	ellipse(0, 0, 50, 50);
+	// Add rectangles to the top of the right eye
+	fill(0);
+	rect(-6.5, -35, 3, 10); // Left rectangle
+	rect(3.5, -35, 3, 10); // Right rectangle
 	rotate(rightAngle);
 	fill(0);
 	ellipse(12.5, 0, 25, 25);
